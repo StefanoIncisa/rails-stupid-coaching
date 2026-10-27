@@ -1,24 +1,34 @@
-# README
+# Rails Stupid Coaching
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A tiny Rails app that plays a lazy life coach. You ask a question and the coach answers based on how you asked it.
 
-Things you may want to cover:
+Built during the [Le Wagon](https://www.lewagon.com) Web Development bootcamp (London, 2026) as a first introduction to the Rails request cycle without a database.
 
-* Ruby version
+> Status: work in progress. The Rails app is generated and the routes, controller and views are the next step.
 
-* System dependencies
+## How the coach replies
 
-* Configuration
+| You say | Coach says |
+| --- | --- |
+| `I am going to work` | "Great!" |
+| A question ending with `?` | "Silly question, get dressed and go to work!" |
+| Anything else | "I don't care, get dressed and go to work!" |
 
-* Database creation
+## Planned structure
 
-* Database initialization
+- `GET /ask` shows a form with a question field
+- `GET /answer` reads the `question` param and renders the coach's reply
+- `QuestionsController` with `ask` and `answer` actions
 
-* How to run the test suite
+## Tech stack
 
-* Services (job queues, cache servers, search engines, etc.)
+Ruby on Rails 8, ERB views, HTML and CSS.
 
-* Deployment instructions
+## Run it locally
 
-* ...
+```bash
+git clone https://github.com/StefanoIncisa/rails-stupid-coaching.git
+cd rails-stupid-coaching
+bundle install
+rails server
+```
