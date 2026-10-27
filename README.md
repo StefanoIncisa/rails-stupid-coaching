@@ -2,7 +2,7 @@
 
 A tiny Rails app that plays a lazy life coach. You ask a question and the coach answers based on how you asked it.
 
-Built during the [Le Wagon](https://www.lewagon.com) Web Development bootcamp (London, 2026) as a first introduction to the Rails request cycle without a database.
+Built during the [Le Wagon](https://www.lewagon.com) AI Software Development bootcamp (2026) as a first introduction to the Rails request cycle without a database.
 
 > Status: work in progress. The Rails app is generated and the routes, controller and views are the next step.
 
